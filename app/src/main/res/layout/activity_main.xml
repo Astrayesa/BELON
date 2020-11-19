@@ -27,14 +27,16 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="223dp"
-            android:layout_margin="10dp"
             app:srcCompat="@drawable/motor_02" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bengkel Motor" />
+            android:gravity="right"
+            android:text="Bengkel Motor"
+            android:textColor="#FFEB3B"
+            android:textSize="18sp" />
     </FrameLayout>
 
     <FrameLayout
@@ -46,14 +48,16 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="223dp"
-            android:layout_margin="10dp"
             app:srcCompat="@drawable/mobil_01" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bengkel Mobil" />
+            android:gravity="right"
+            android:text="Bengkel Mobil"
+            android:textColor="#FFEB3B"
+            android:textSize="18sp" />
     </FrameLayout>
 
 </LinearLayout>

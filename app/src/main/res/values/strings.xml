@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">BELON</string>
+    <string name="belon">BELON</string>
+    <string name="logo_belon">logo_belon</string>
+    <string name="lorem">lorem ipsum dolor sit amet</string>
+    <string-array name="data_name_motor">
+        <item>Bengkel motor 1</item>
+        <item>Bengkel motor 2</item>
+        <item>Bengkel motor 3</item>
+        <item>Bengkel motor 4</item>
+        <item>Bengkel motor 5</item>
+    </string-array>
+    <string-array name="data_description_motor">
+        <item>deskripsi bengkel motor 1</item>
+        <item>deskripsi bengkel motor 2</item>
+        <item>deskripsi bengkel motor 3</item>
+        <item>deskripsi bengkel motor 4</item>
+        <item>deskripsi bengkel motor 5</item>
+    </string-array>
+    <array name="data_photo_motor">
+        <item>@drawable/motor_02</item>
+        <item>@drawable/motor_02</item>
+        <item>@drawable/motor_02</item>
+        <item>@drawable/motor_02</item>
+        <item>@drawable/motor_02</item>
+    </array>
+
+    <string-array name="data_name_mobil">
+        <item>Bengkel mobil 1</item>
+        <item>Bengkel mobil 2</item>
+        <item>Bengkel mobil 3</item>
+        <item>Bengkel mobil 4</item>
+        <item>Bengkel mobil 5</item>
+    </string-array>
+    <string-array name="data_description_mobil">
+        <item>deskripsi bengkel mobil 1</item>
+        <item>deskripsi bengkel mobil 2</item>
+        <item>deskripsi bengkel mobil 3</item>
+        <item>deskripsi bengkel mobil 4</item>
+        <item>deskripsi bengkel mobil 5</item>
+    </string-array>
+    <array name="data_photo_mobil">
+        <item>@drawable/mobil_01</item>
+        <item>@drawable/mobil_01</item>
+        <item>@drawable/mobil_01</item>
+        <item>@drawable/mobil_01</item>
+        <item>@drawable/mobil_01</item>
+    </array>
+</resources>

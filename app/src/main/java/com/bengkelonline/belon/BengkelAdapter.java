@@ -64,10 +64,10 @@ public class BengkelAdapter extends BaseAdapter {
 
         }
 
-        void bind(Bengkel hero) {
-            txtName.setText(hero.getName());
-            txtDescription.setText(hero.getDescription());
-            imgPhoto.setImageResource(hero.getPhoto());
+        void bind(Bengkel bengkel) {
+            txtName.setText(bengkel.getName());
+            txtDescription.setText(bengkel.getDescription());
+            imgPhoto.setImageDrawable(bengkel.getPhoto());
         }
     }
 

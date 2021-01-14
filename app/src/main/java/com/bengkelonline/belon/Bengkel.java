@@ -1,7 +1,9 @@
 package com.bengkelonline.belon;
 
+import android.graphics.drawable.Drawable;
+
 public class Bengkel {
-    private int photo;
+    private Drawable photo;
     private String name;
     private int jam_buka;
     private int jam_tutup;
@@ -23,11 +25,11 @@ public class Bengkel {
         this.jam_tutup = jam_tutup;
     }
 
-    public int getPhoto() {
+    public Drawable getPhoto() {
         return photo;
     }
 
-    public void setPhoto(int photo) {
+    public void setPhoto(Drawable photo) {
         this.photo = photo;
     }
 

@@ -77,7 +77,10 @@ public class TestAdapter {
 
     public Cursor getBengkelDetail(String nama) {
         try {
-            String sql = String.format("SELECT bengkel.id as id, nama, jenis, jamoperasional, nohp, alamat, servis FROM bengkel JOIN fitur ON bengkel.id = fitur.id_bengkel WHERE nama = '%s'", nama);
+            String sql = String.format("SELECT bengkel.id as id, " +
+                    "nama, jenis, jamoperasional, nohp, alamat, servis " +
+                    "FROM bengkel JOIN fitur ON bengkel.id = fitur.id_bengkel " +
+                    "WHERE nama = '%s'", nama);
             Cursor mCur = mDb.rawQuery(sql, null);
             if (mCur != null) {
                 mCur.moveToNext();

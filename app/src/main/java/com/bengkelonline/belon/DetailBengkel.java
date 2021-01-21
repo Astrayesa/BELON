@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -32,6 +33,7 @@ public class DetailBengkel extends AppCompatActivity {
         TextView waktu_operasi = findViewById(R.id.waktu_operasi);
         TextView no_tlp = findViewById(R.id.no_tlp);
         TextView lokasi = findViewById(R.id.lokasi);
+        LinearLayout list_fitur = findViewById(R.id.list_fitur);
 
         nama_bengkel.setText(nullcheck(cursor.getString(cursor.getColumnIndexOrThrow("nama")), "nama"));
         jenis_bengkel.setText(nullcheck(cursor.getString(cursor.getColumnIndexOrThrow("jenis")), "jenis"));
@@ -49,6 +51,12 @@ public class DetailBengkel extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        do{
+            TextView tv = new TextView(this);
+            tv.setText(cursor.getString(cursor.getColumnIndexOrThrow("servis")));
+            tv.setHeight(getResources().getDimensionPixelSize(R.dimen.dimen_64));
+            list_fitur.addView(tv);
+        }while (cursor.moveToNext());
         mDbHelper.close();
 
     }

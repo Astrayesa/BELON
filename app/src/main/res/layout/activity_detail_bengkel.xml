@@ -58,38 +58,23 @@
         android:gravity="center|start"
         android:text="Lokasi" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pelayanan yang tersedia"
+        android:textSize="18sp" />
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp">
 
         <LinearLayout
+            android:id="@+id/list_fitur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/fitur"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="Fitur 1" />
-
-            <TextView
-                android:id="@+id/fitur1"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="Fitur 1" />
-
-            <TextView
-                android:id="@+id/fitur2"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="Fitur 1" />
-
-            <TextView
-                android:id="@+id/fitur3"
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="Fitur 1" />
 
         </LinearLayout>
     </ScrollView>
